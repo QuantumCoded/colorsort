@@ -1,0 +1,14 @@
+[package]
+name = "colorsort"
+version = "0.1.0"
+edition = "2021"
+description = "Renames images in a directory to an image sequence in order of increasing hue"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "3.2.8", features = ["cargo"] }
+image = "0.24.2"
+main_error = "0.1.2"
+palette = { version = "0.6.0", default-features = false, features = ["std"] }
+thiserror = "1.0.31"
